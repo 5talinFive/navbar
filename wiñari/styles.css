@@ -1,0 +1,100 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+} */
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+.menu {
+    display: none;
+}
+.logo {
+    width: 120px;
+}
+.navbar-left ul,
+.navbar-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.inactive {
+    display: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid green;
+}
+.navbar-left {
+    display: flex;
+}
+.navbar-left ul {
+    margin-left: 14px;
+}
+.navbar-left ul li a,
+.navbar-right ul li a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid red;
+    padding: 18px; 
+    border-radius: 4px;
+    margin: 4px;
+}
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover {
+    color: green;
+    border: 1px solid green;
+    color: grey;
+    border-radius: 4px;
+}
+.navbar-email {
+    color: grey;
+    font-size: 18px;
+    margin-right: 12px;
+}
+.navbar-perfil-icon img {
+    position: relative;
+    width: 50px;
+}
+@media (max-width: 640px) {
+    .menu {
+        display: block;
+    }
+
+    .navbar-left ul {
+        display: none;
+    }
+
+    .navbar-email {
+        display: none;
+    }
+}
+
+
+/* -------------------------------------------- */
+/* MENU ESCRITORIO */
+.desktop-menu {
+    top: 68px;
+    right: 60px;
+    background: white;
+    position: absolute;
+    width: 100px;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 20px 20px 0 20px;
+}
+.desktop-menu ul {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
